@@ -1,22 +1,15 @@
-package com.jnsdev.microservicos.shoppingclient.dto;
+package com.jnsdev.microservicos.dto;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 /**
  * @Autor Jairo Nascimento
  * @Created 26/09/2021 - 17:00
  */
 public class ProductDTO {
-    @NotBlank
     private String productIdentifier;
-    @NotBlank
     private String nome;
-    @NotBlank
     private String descricao;
-    @NotNull
     private Float preco;
-    @NotNull
     private CategoryDTO category;
 
     public String getProductIdentifier() {

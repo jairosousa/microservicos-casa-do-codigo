@@ -1,7 +1,7 @@
 package com.jnsdev.microservicos.userapi.exception.advice;
 
-import com.jnsdev.microservicos.shoppingclient.dto.ErrorDTO;
-import com.jnsdev.microservicos.shoppingclient.exception.UserNotFoundException;
+import com.jnsdev.microservicos.dto.ErrorDTO;
+import com.jnsdev.microservicos.exception.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

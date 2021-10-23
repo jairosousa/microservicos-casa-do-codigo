@@ -1,7 +1,7 @@
 package com.jnsdev.microservicos.productapi.controller;
 
 import com.jnsdev.microservicos.productapi.service.ProductService;
-import com.jnsdev.microservicos.shoppingclient.dto.ProductDTO;
+import com.jnsdev.microservicos.dto.ProductDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

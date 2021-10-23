@@ -1,4 +1,4 @@
-package com.jnsdev.microservicos.shoppingclient.exception;
+package com.jnsdev.microservicos.exception;
 
 /**
  * @Autor Jairo Nascimento

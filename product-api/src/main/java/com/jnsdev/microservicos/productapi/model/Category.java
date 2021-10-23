@@ -1,6 +1,6 @@
 package com.jnsdev.microservicos.productapi.model;
 
-import com.jnsdev.microservicos.shoppingclient.dto.CategoryDTO;
+import com.jnsdev.microservicos.dto.CategoryDTO;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

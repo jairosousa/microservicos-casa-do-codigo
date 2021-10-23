@@ -1,7 +1,7 @@
 package com.jnsdev.microservicos.shoppingapi.repository;
 
+import com.jnsdev.microservicos.dto.ShopReportDTO;
 import com.jnsdev.microservicos.shoppingapi.model.Shop;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopReportDTO;
 
 import java.util.Date;
 import java.util.List;

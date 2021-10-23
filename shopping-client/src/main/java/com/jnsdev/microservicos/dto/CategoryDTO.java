@@ -1,13 +1,11 @@
-package com.jnsdev.microservicos.shoppingclient.dto;
+package com.jnsdev.microservicos.dto;
 
-import javax.validation.constraints.NotNull;
 
 /**
  * @Autor Jairo Nascimento
  * @Created 26/09/2021 - 17:01
  */
 public class CategoryDTO {
-    @NotNull
     private Long id;
     private String nome;
 

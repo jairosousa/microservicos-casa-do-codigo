@@ -2,8 +2,8 @@ package com.jnsdev.microservicos.shoppingapi.converter;
 
 import com.jnsdev.microservicos.shoppingapi.model.Item;
 import com.jnsdev.microservicos.shoppingapi.model.Shop;
-import com.jnsdev.microservicos.shoppingclient.dto.ItemDTO;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopDTO;
+import com.jnsdev.microservicos.dto.ItemDTO;
+import com.jnsdev.microservicos.dto.ShopDTO;
 
 import java.util.stream.Collectors;
 

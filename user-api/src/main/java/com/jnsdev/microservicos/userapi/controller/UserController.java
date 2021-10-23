@@ -1,6 +1,6 @@
 package com.jnsdev.microservicos.userapi.controller;
 
-import com.jnsdev.microservicos.shoppingclient.dto.UserDTO;
+import com.jnsdev.microservicos.dto.UserDTO;
 import com.jnsdev.microservicos.userapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +18,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/user")
-    public List<UserDTO> getUsers(){
+    public List<UserDTO> getUsers() {
         List<UserDTO> usuarios = userService.getAll();
         return usuarios;
     }

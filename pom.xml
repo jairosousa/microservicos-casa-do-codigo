@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>product-api</module>
+        <module>shopping-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

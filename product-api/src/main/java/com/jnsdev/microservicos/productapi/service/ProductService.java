@@ -1,6 +1,6 @@
 package com.jnsdev.microservicos.productapi.service;
 
-import com.jnsdev.microservicos.shoppingclient.dto.ProductDTO;
+import com.jnsdev.microservicos.dto.ProductDTO;
 
 import java.util.List;
 

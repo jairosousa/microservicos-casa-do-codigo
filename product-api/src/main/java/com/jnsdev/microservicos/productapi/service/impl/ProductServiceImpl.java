@@ -1,15 +1,14 @@
 package com.jnsdev.microservicos.productapi.service.impl;
 
+import com.jnsdev.microservicos.dto.ProductDTO;
 import com.jnsdev.microservicos.productapi.converter.DTOConverter;
 import com.jnsdev.microservicos.productapi.model.Product;
 import com.jnsdev.microservicos.productapi.repository.CategoryRepository;
 import com.jnsdev.microservicos.productapi.repository.ProducrRepository;
 import com.jnsdev.microservicos.productapi.service.ProductService;
-import com.jnsdev.microservicos.shoppingclient.dto.ProductDTO;
-import com.jnsdev.microservicos.shoppingclient.exception.CategoryNotFoundException;
-import com.jnsdev.microservicos.shoppingclient.exception.ProductNotFoundException;
+import com.jnsdev.microservicos.exception.CategoryNotFoundException;
+import com.jnsdev.microservicos.exception.ProductNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

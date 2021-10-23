@@ -1,7 +1,7 @@
 package com.jnsdev.microservicos.shoppingapi.service;
 
-import com.jnsdev.microservicos.shoppingclient.dto.ShopDTO;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopReportDTO;
+import com.jnsdev.microservicos.dto.ShopDTO;
+import com.jnsdev.microservicos.dto.ShopReportDTO;
 
 import java.text.ParseException;
 import java.util.Date;

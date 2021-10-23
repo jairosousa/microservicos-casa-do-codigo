@@ -1,7 +1,7 @@
 package com.jnsdev.microservicos.userapi.service;
 
-import com.jnsdev.microservicos.shoppingclient.dto.UserDTO;
-import com.jnsdev.microservicos.shoppingclient.exception.UserNotFoundException;
+import com.jnsdev.microservicos.dto.UserDTO;
+import com.jnsdev.microservicos.exception.UserNotFoundException;
 import com.jnsdev.microservicos.userapi.converter.DTOConverter;
 import com.jnsdev.microservicos.userapi.model.User;
 import com.jnsdev.microservicos.userapi.repository.UserRepository;

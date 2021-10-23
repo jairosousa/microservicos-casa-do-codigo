@@ -2,7 +2,7 @@ package com.jnsdev.microservicos.shoppingapi.repository.impl;
 
 import com.jnsdev.microservicos.shoppingapi.model.Shop;
 import com.jnsdev.microservicos.shoppingapi.repository.ReportRepository;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopReportDTO;
+import com.jnsdev.microservicos.dto.ShopReportDTO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

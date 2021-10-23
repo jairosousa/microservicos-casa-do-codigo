@@ -1,8 +1,8 @@
 package com.jnsdev.microservicos.shoppingapi.controller;
 
 import com.jnsdev.microservicos.shoppingapi.service.ShopService;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopDTO;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopReportDTO;
+import com.jnsdev.microservicos.dto.ShopDTO;
+import com.jnsdev.microservicos.dto.ShopReportDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;

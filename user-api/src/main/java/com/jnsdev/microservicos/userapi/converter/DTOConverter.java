@@ -1,6 +1,6 @@
 package com.jnsdev.microservicos.userapi.converter;
 
-import com.jnsdev.microservicos.shoppingclient.dto.UserDTO;
+import com.jnsdev.microservicos.dto.UserDTO;
 import com.jnsdev.microservicos.userapi.model.User;
 
 /**

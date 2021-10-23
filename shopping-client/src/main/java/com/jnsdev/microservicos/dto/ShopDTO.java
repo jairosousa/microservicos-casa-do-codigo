@@ -1,7 +1,5 @@
-package com.jnsdev.microservicos.shoppingclient.dto;
+package com.jnsdev.microservicos.dto;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
 
@@ -11,13 +9,11 @@ import java.util.List;
  */
 public class ShopDTO {
 
-    @NotBlank
     private String userIdentifier;
 
     private Float total;
 
     private Date date;
-    @NotNull
     private List<ItemDTO> items;
 
     public String getUserIdentifier() {

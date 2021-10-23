@@ -1,20 +1,19 @@
 package com.jnsdev.microservicos.shoppingapi.service.impl;
 
+import com.jnsdev.microservicos.dto.ItemDTO;
+import com.jnsdev.microservicos.dto.ProductDTO;
+import com.jnsdev.microservicos.dto.ShopDTO;
+import com.jnsdev.microservicos.dto.ShopReportDTO;
 import com.jnsdev.microservicos.shoppingapi.converter.DTOConverter;
 import com.jnsdev.microservicos.shoppingapi.model.Shop;
 import com.jnsdev.microservicos.shoppingapi.repository.ShopRepository;
 import com.jnsdev.microservicos.shoppingapi.service.ProductService;
 import com.jnsdev.microservicos.shoppingapi.service.ShopService;
 import com.jnsdev.microservicos.shoppingapi.service.UserService;
-import com.jnsdev.microservicos.shoppingclient.dto.ItemDTO;
-import com.jnsdev.microservicos.shoppingclient.dto.ProductDTO;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopDTO;
-import com.jnsdev.microservicos.shoppingclient.dto.ShopReportDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;

@@ -1,20 +1,15 @@
 package com.jnsdev.microservicos.shoppingapi.advice;
 
-import com.jnsdev.microservicos.shoppingclient.dto.ErrorDTO;
-import com.jnsdev.microservicos.shoppingclient.exception.CategoryNotFoundException;
-import com.jnsdev.microservicos.shoppingclient.exception.ProductNotFoundException;
-import com.jnsdev.microservicos.shoppingclient.exception.UserNotFoundException;
+import com.jnsdev.microservicos.dto.ErrorDTO;
+import com.jnsdev.microservicos.exception.ProductNotFoundException;
+import com.jnsdev.microservicos.exception.UserNotFoundException;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * @Autor Jairo Nascimento

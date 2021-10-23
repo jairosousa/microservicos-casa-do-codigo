@@ -15,6 +15,7 @@
     <description>user-api</description>
     <properties>
         <java.version>11</java.version>
+        <docker.image.prefix>loja</docker.image.prefix>
     </properties>
     <dependencies>
         <dependency>
@@ -43,7 +44,7 @@
         <dependency>
             <groupId>com.jnsdev.microservicos</groupId>
             <artifactId>shopping-client</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -53,6 +54,15 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.9</version>
+                <configuration>
+                    <repository>${docker.image.prefix}/${project.artifactId}
+                    </repository>
+                </configuration>
             </plugin>
         </plugins>
     </build>

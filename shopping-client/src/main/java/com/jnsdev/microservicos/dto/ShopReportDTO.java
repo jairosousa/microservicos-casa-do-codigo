@@ -1,4 +1,4 @@
-package com.jnsdev.microservicos.shoppingclient.dto;
+package com.jnsdev.microservicos.dto;
 
 /**
  * @Autor Jairo Nascimento

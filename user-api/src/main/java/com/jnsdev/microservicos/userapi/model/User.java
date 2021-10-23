@@ -1,6 +1,6 @@
 package com.jnsdev.microservicos.userapi.model;
 
-import com.jnsdev.microservicos.shoppingclient.dto.UserDTO;
+import com.jnsdev.microservicos.dto.UserDTO;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,7 +1,6 @@
 package com.jnsdev.microservicos.shoppingapi.model;
 
-
-import com.jnsdev.microservicos.shoppingclient.dto.ItemDTO;
+import com.jnsdev.microservicos.dto.ItemDTO;
 
 import javax.persistence.Embeddable;
 

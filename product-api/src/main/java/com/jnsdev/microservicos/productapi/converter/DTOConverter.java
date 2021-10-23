@@ -2,8 +2,8 @@ package com.jnsdev.microservicos.productapi.converter;
 
 import com.jnsdev.microservicos.productapi.model.Category;
 import com.jnsdev.microservicos.productapi.model.Product;
-import com.jnsdev.microservicos.shoppingclient.dto.CategoryDTO;
-import com.jnsdev.microservicos.shoppingclient.dto.ProductDTO;
+import com.jnsdev.microservicos.dto.CategoryDTO;
+import com.jnsdev.microservicos.dto.ProductDTO;
 
 /**
  * @Autor Jairo Nascimento

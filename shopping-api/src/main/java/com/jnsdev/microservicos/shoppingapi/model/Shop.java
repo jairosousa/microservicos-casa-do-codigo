@@ -1,6 +1,6 @@
 package com.jnsdev.microservicos.shoppingapi.model;
 
-import com.jnsdev.microservicos.shoppingclient.dto.ShopDTO;
+import com.jnsdev.microservicos.dto.ShopDTO;
 
 import javax.persistence.*;
 import java.util.Date;
