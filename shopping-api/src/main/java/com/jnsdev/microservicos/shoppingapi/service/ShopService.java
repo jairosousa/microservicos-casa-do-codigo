@@ -21,7 +21,7 @@ public interface ShopService {
 
     public ShopDTO findById(long ProductId);
 
-    public ShopDTO save(ShopDTO shopDTO) throws ParseException;
+    public ShopDTO save(ShopDTO shopDTO, String key) throws ParseException;
 
     public List<ShopDTO> getShopsByFilter(Date dataInicio, Date dataFim, Float valorMinimo);
 

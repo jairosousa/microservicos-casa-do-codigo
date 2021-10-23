@@ -12,7 +12,7 @@ import java.util.Date;
  * @Autor Jairo Nascimento
  * @Created 24/09/2021 - 16:11
  */
-@Entity
+@Entity(name = "user")
 public class User {
 
     @Id
@@ -21,6 +21,7 @@ public class User {
     private String nome;
     private String cpf;
     private String endereco;
+    private String key;
     private String email;
     private String telefone;
     private Date dataCadastro;
@@ -81,6 +82,14 @@ public class User {
         this.dataCadastro = dataCadastro;
     }
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
     public static User convert(UserDTO userDTO) {
         User user = new User();
         user.setNome(userDTO.getNome());
@@ -88,6 +97,7 @@ public class User {
         user.setCpf(userDTO.getCpf());
         user.setEmail(userDTO.getEmail());
         user.setTelefone(userDTO.getTelefone());
+        user.setKey(userDTO.getKey());
         user.setDataCadastro(userDTO.getDataCadastro());
         return user;
     }

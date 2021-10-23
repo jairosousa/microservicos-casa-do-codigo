@@ -8,8 +8,10 @@ import com.jnsdev.microservicos.userapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 /**
@@ -38,6 +40,8 @@ public class UserService {
     }
 
     public UserDTO save(UserDTO userDTO) {
+        userDTO.setKey(UUID.randomUUID().toString());
+        userDTO.setDataCadastro(new Date());
         User user = userRepository.save(User.convert(userDTO));
         return DTOConverter.convert(user);
     }
@@ -57,8 +61,8 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
-    public UserDTO findByCpf(String cpf) {
-        User usuario = userRepository.findByCpf(cpf);
+    public UserDTO findByCpfAndKey(String cpf, String key) {
+        User usuario = userRepository.findByCpfAndKey(cpf, key);
         if (usuario != null) {
             return DTOConverter.convert(usuario);
         }

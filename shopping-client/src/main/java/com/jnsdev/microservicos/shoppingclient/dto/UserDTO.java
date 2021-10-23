@@ -10,6 +10,7 @@ public class UserDTO {
     private String nome;
     private String cpf;
     private String endereco;
+    private String key;
     private String email;
     private String telefone;
     private Date dataCadastro;
@@ -62,7 +63,15 @@ public class UserDTO {
         this.dataCadastro = dataCadastro;
     }
 
-//    public	static	UserDTO	convert(User user) {
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    //    public	static	UserDTO	convert(User user) {
 //        UserDTO	userDTO	=	new	UserDTO();
 //        userDTO.setNome(user.getNome());
 //        userDTO.setEndereco(user.getEndereco());
