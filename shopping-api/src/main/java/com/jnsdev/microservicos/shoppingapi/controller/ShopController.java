@@ -69,7 +69,9 @@ public class ShopController {
     }
 
     @PostMapping("/shopping")
-    public ShopDTO newShop(@Valid @RequestBody ShopDTO shopDTO) throws ParseException {
-        return shopService.save(shopDTO);
+    public ShopDTO newShop(
+            @RequestHeader(name = "key", required = true) String key,
+            @Valid @RequestBody ShopDTO shopDTO) throws ParseException {
+        return shopService.save(shopDTO, key);
     }
 }

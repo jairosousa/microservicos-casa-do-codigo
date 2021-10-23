@@ -69,9 +69,9 @@ public class ShopServiceImpl implements ShopService {
         return null;
     }
 
-    public ShopDTO save(ShopDTO shopDTO) throws ParseException {
+    public ShopDTO save(ShopDTO shopDTO, String key) throws ParseException {
         if (userService
-                .getUserByCpf(shopDTO.getUserIdentifier()) == null) {
+                .getUserByCpf(shopDTO.getUserIdentifier(), key) == null) {
             return null;
         }
 
