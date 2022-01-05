@@ -41,7 +41,7 @@ public class UserService {
 
     public UserDTO save(UserDTO userDTO) {
         userDTO.setKey(UUID.randomUUID().toString());
-        userDTO.setDataCadastro(new Date());
+//        userDTO.setDataCadastro(new Date());
         User user = userRepository.save(User.convert(userDTO));
         return DTOConverter.convert(user);
     }

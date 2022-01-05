@@ -1,6 +1,7 @@
 package com.jnsdev.microservicos.userapi.model;
 
 import com.jnsdev.microservicos.dto.UserDTO;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,6 +25,7 @@ public class User {
     private String key;
     private String email;
     private String telefone;
+    @CreationTimestamp
     private Date dataCadastro;
 
     public Long getId() {
@@ -98,7 +100,7 @@ public class User {
         user.setEmail(userDTO.getEmail());
         user.setTelefone(userDTO.getTelefone());
         user.setKey(userDTO.getKey());
-        user.setDataCadastro(userDTO.getDataCadastro());
+//        user.setDataCadastro(userDTO.getDataCadastro());
         return user;
     }
 }

@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  db:
+    container_name: dev-postgres
+    image: jnsousa/postgres:12.8
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev
+    ports:
+      - 5432:5432
